@@ -5,6 +5,7 @@
     --color-font2: #B3B2B7;
     --color-primary: #232851;
     --color-secundary: #F3603C;
+    --color-thirted: #1d1e25;
     --color-secundary-Trans: #f3613c23;
 }
 
@@ -22,6 +23,8 @@ html {
 h2 {
     font-size: 3.2rem;
     font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.6;
 }
 
 
@@ -121,7 +124,6 @@ p, a {
 
 /* -------- MAIN -------- */
 
-
 .main {
     margin-top: 7rem;
 }
@@ -178,15 +180,9 @@ p, a {
     margin: 0 2.5rem;
 }
 
-.question__tittle {
-    color: var(--color-primary);
-
-}
-
 .question__text {
     margin-top: 3rem;
     color: var(--color-font2);
-    line-height: 1.6;
 }
 
 .about__step {
@@ -198,8 +194,13 @@ p, a {
     list-style: none;
 }
 
+.step__item {
+    margin-bottom: 5.4rem;
+}
+
 .item__content {
-    
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,8 +227,139 @@ p, a {
 }
 
 .item__text {
-    margin: 1.8rem 2.6rem 5.4rem 0;
+    margin-top: 1.8rem;
+    margin-right: 2.6rem;
     text-align: start;
     font-size: 1.4rem;
     color: var(--color-font2);
+    line-height: 2.5rem;
+}
+
+.main__testimony {
+    margin: 0 4.6rem;
+}
+
+.testimony__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimony {
+    margin-top: 4.6rem;
+    text-align: center;
+}
+
+.testimony__photo {
+    height: 7rem;
+    margin: 0 auto;
+    width: 7rem;
+}
+
+.testimony__photo img {
+    width: 100%;
+}
+
+.testimony__name {
+    margin-top: 4.8rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.testimony__text {
+    font-size: 1.5rem;
+}
+
+.buttom__testimony {
+    align-self: center;
+    margin-top: 8rem;
+}
+
+.main__banner {
+    background-color: var(--color-secundary);
+    margin-top: 4.2rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40.6rem;
+    padding: 0 3.7rem ;
+}
+
+.banner__tittle {
+    font-size: 3.6rem;
+    padding-top: 7rem;
+    color: var(--color-font1);
+} 
+
+.buttom__banner {
+    margin: 0;
+    background-color: var(--color-font1);
+    color: var(--color-secundary);
+    margin-top: 1.8rem;
+}
+
+/* -------- FOOTER -------- */
+.footer__container {
+    background-color: var(--color-thirted);
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-font1);
+}
+
+.footer__container a {
+    color: var(--color-font1);
+    text-decoration: none;
+}
+
+.footer__search {
+    margin-bottom: 4rem;
+}
+
+.search__formulary {
+    height: 4.4rem;
+    /* margin: 0 3rem; */
+}
+
+.search__input {
+    width: 24.4rem;
+    height: 100%;
+    border-radius: 5rem;
+    font-family: 'Be Vietnam', sans-serif;
+    padding: 1rem;
+    outline: 0;
+    border: none;
+}
+
+.buttom__formulary {
+    padding: 1rem;
+    display: inline-block;
+    width: 6.3rem;
+    background-color: var(--color-secundary);
+    margin-top: 0;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    border: none;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.nav__list,
+.conditions__list {
+    list-style: none;
+    
+}
+
+.nav__item,
+.conditions__items {
+    margin-bottom: 1.2rem;
 }
