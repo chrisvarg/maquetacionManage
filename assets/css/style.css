@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+:root {
+    --color-menuMobile: rgb(143, 148, 167);
+    --color-font1: #FFFFFF;
+    --color-font2: #B3B2B7;
+    --color-primary: #232851;
+    --color-secundary: #F3603C;
+    --color-secundary-Trans: #f3613c23;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 62.5%;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+p, a {
+    font-size: 1.6rem; 
+}
+
+/* -------- HEADER -------- */
+
+
+.header__menu {
+    width: 100%;
+}
+
+.header__container {
+    margin: 0 3rem;
+    padding-top: 4rem;
+}
+
+.header__image {
+    display: inline-block;
+}
+
+.burguer__container {
+    padding: 0.4rem 0.7rem;
+    display: inline-block;
+    position: absolute;
+    right: 3rem;
+    top: 3.4rem;
+    z-index: 1;
+}
+
+.burguer__container:hover {
+    background-color: var(--color-secundary);
+}
+
+.burguer__container img {
+    height: 100%;
+    padding-top: 0.5rem;
+}
+
+
+/* Menu Burguer */
+
+#menu__burguer {
+    display: none;
+}
+
+#menu__burguer:checked ~ .menu__content {
+    margin: -30px;
+    margin-top: -6.7rem;
+    padding: 7.5rem 0;
+    transition: 1 s;
+    width: 100vw;
+}
+
+.menu__content {
+    background-color: var(--color-menuMobile);
+    
+    margin-left: -3rem;
+    margin-top: -110%;
+    position: absolute;
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.list__items {
+    height: 6rem;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.list__items a {
+    color: var(--color-font1);
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 100%;
+    padding-top: 2.2rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+.list__items a:hover{
+    background-color: var(--color-secundary);
+}
+
+.header__buttom {
+    display: none;
+}
+
+/* -------- MAIN -------- */
+
+
+.main {
+    margin-top: 7rem;
+}
+
+.main__home {
+    margin: 0 3rem;
+}
+
+.illustration__container img {
+    width: 100%;
+}
+
+.home__text {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__text h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.home__text p {
+    margin-top: 1rem;
+    color: var(--color-font2);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.buttom {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-secundary);
+    width: 13.4rem;
+    text-align: center;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-font1);
+}
+
+.main__about {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.about__question {
+    margin: 0 2.5rem;
+}
+
+.question__tittle {
+    color: var(--color-primary);
+
+}
+
+.question__text {
+    margin-top: 3rem;
+    color: var(--color-font2);
+    line-height: 1.6;
+}
+
+.about__step {
+    margin: 0 0 0 1.5rem;
+    margin-top: 5.5rem;
+}
+
+.step__list {
+    list-style: none;
+}
+
+.item__content {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundary-Trans);
+}
+
+.item__buttom {
+    align-self: flex-start;
+    margin: 0;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    width: 6.8rem;
+}
+
+.item__tittle {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 4.3rem;
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1.4rem;
+    text-align: start;
+}
+
+.item__text {
+    margin: 1.8rem 2.6rem 5.4rem 0;
+    text-align: start;
+    font-size: 1.4rem;
+    color: var(--color-font2);
+}
