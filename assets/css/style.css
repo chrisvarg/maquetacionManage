@@ -7,6 +7,7 @@
     --color-secundary: #F3603C;
     --color-thirted: #1d1e25;
     --color-secundary-Trans: #f3613c23;
+    --color-fondo: #FAFAFA;
 }
 
 * {
@@ -30,18 +31,18 @@ h2 {
 
 p, a {
     font-size: 1.6rem; 
+    color: var(--color-font2);
 }
 
 /* -------- HEADER -------- */
 
-
-.header__menu {
-    width: 100%;
-}
-
 .header__container {
     margin: 0 3rem;
     padding-top: 4rem;
+}
+
+.header__menu {
+    width: 100%;
 }
 
 .logo {
@@ -50,12 +51,11 @@ p, a {
 
 .logo img {
     margin-top: 1rem;
-
 }
 
 .burguer__container {
-    padding: 0.4rem 0.7rem;
     display: inline-block;
+    padding: 0.4rem 0.7rem;
     position: absolute;
     right: 3rem;
     top: 4.1rem;
@@ -82,30 +82,28 @@ p, a {
     margin: -30px;
     margin-top: -7.8rem;
     padding: 7.5rem 0;
-    transition: 1 s;
+    transition: 1s;
     width: 100vw;
 }
 
 .menu__content {
     background-color: var(--color-menuMobile);
-    
     margin-left: -3rem;
-    margin-top: -110%;
+    margin-top: -150%;
     position: absolute;
     width: 100%;
 }
+/* end burguer */
 
 .menu__list {
     display: flex;
     flex-direction: column;
-    text-align: start;
 }
 
 .list__items {
     height: 6rem;
     list-style: none;
     text-align: center;
-    width: 100%;
 }
 
 .list__items a {
@@ -126,6 +124,8 @@ p, a {
 .header__buttom {
     display: none;
 }
+/* END HEADER */
+
 
 /* -------- MAIN -------- */
 
@@ -142,38 +142,53 @@ p, a {
 }
 
 .home__text {
-    margin-top: 4rem;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 35rem;
+    margin-top: 4rem;
 }
 
 .home__text h2 {
-    font-size: 3.6rem;
-    text-align: center;
     color: var(--color-primary);
+    font-size: 3.6rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .home__text p {
-    margin-top: 1rem;
     color: var(--color-font2);
-    text-align: center;
-    margin-bottom: 1.5rem;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .buttom {
-    margin-top: 1rem;
-    padding: 1.5rem;
+    color: var(--color-font1);
     background-color: var(--color-secundary);
-    width: 13.4rem;
-    text-align: center;
     border-radius: 5rem;
-    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-font1);
+    /* margin-top: 1rem; */
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 13.4rem;
+    box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.54);
+}
+
+
+.buttom:hover {
+    background-color: var(--color-font1);
+    color: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+    box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.54);
+
+}
+
+.buttom__illustration {
+    margin-top: 3.6rem;
 }
 
 .main__about {
@@ -186,8 +201,8 @@ p, a {
 }
 
 .question__text {
-    margin-top: 3rem;
     color: var(--color-font2);
+    margin-top: 3rem;
 }
 
 .about__step {
@@ -204,20 +219,27 @@ p, a {
 }
 
 .item__content {
-    border-top-left-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--color-secundary-Trans);
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+    display: flex;
+    min-height: 4.5rem;
+    justify-content: center;
 }
 
 .item__buttom {
     align-self: flex-start;
+    font-size: 1.6rem;
     margin: 0;
     padding: 1rem 2.5rem;
-    font-size: 1.6rem;
     width: 6.8rem;
+    box-shadow: none;
+}
+
+.item__buttom:hover {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .item__tittle {
@@ -225,34 +247,41 @@ p, a {
     font-size: 1.6rem;
     font-weight: 700;
     height: 4.3rem;
-    width: 100%;
     margin: 0;
     padding: 0.8rem 1.4rem;
     text-align: start;
+    width: 100%;
 }
 
 .item__text {
+    color: var(--color-font2);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
     margin-top: 1.8rem;
     margin-right: 2.6rem;
     text-align: start;
-    font-size: 1.4rem;
-    color: var(--color-font2);
-    line-height: 2.5rem;
 }
 
 .main__testimony {
     margin: 0 4.6rem;
+    min-height: 120rem;
 }
 
 .testimony__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
+.testimony__tittle {
+    margin-bottom: 5.5rem;
+}
+
 .testimony {
+    background-color: var(--color-fondo);
+    margin-bottom: 4rem;
     margin-top: 4.6rem;
+    padding-bottom: 4rem;
     text-align: center;
 }
 
@@ -264,13 +293,14 @@ p, a {
 
 .testimony__photo img {
     width: 100%;
+    position: relative;
+    top: -35px;
 }
 
 .testimony__name {
-    margin-top: 4.8rem;
-    margin-bottom: 2rem;
     color: var(--color-primary);
     font-weight: 700;
+    margin-bottom: 2.9rem;
 }
 
 .testimony__text {
@@ -279,48 +309,48 @@ p, a {
 
 .buttom__testimony {
     align-self: center;
-    margin-top: 8rem;
 }
 
 .main__banner {
+    align-items: center;
     background-color: var(--color-secundary);
-    margin-top: 4.2rem;
-    margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     height: 40.6rem;
+    margin-top: 4.2rem;
+    margin-bottom: 0;
     padding: 0 3.7rem ;
+    text-align: center;
 }
 
 .banner__tittle {
-    font-size: 3.6rem;
-    padding-top: 7rem;
     color: var(--color-font1);
+    font-size: 4rem;
+    padding-top: 7rem;
 } 
 
 .buttom__banner {
-    margin: 0;
     background-color: var(--color-font1);
     color: var(--color-secundary);
-    margin-top: 1.8rem;
+    margin: 0;
+    margin-top: 4rem;
 }
+
 
 /* -------- FOOTER -------- */
 .footer__container {
     background-color: var(--color-thirted);
-    padding: 5rem 3rem 0 3rem;
+    color: var(--color-font1);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--color-font1);
+    padding: 5rem 3rem 0 3rem;
 }
 
 .footer__container a {
     color: var(--color-font1);
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
 }
 
 .footer__search {
@@ -329,28 +359,27 @@ p, a {
 
 .search__formulary {
     height: 4.4rem;
-    /* margin: 0 3rem; */
 }
 
 .search__input {
-    width: 24.4rem;
-    height: 100%;
+    border: none;
     border-radius: 5rem;
     font-family: 'Be Vietnam', sans-serif;
-    padding: 1rem;
+    height: 100%;
     outline: 0;
-    border: none;
+    padding: 1rem;
+    width: 24.4rem;
 }
 
 .buttom__formulary {
-    padding: 1rem;
-    display: inline-block;
-    width: 6.3rem;
     background-color: var(--color-secundary);
-    margin-top: 0;
-    margin-left: 0.5rem;
-    font-weight: 600;
     border: none;
+    display: inline-block;
+    font-weight: 600;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    width: 6.3rem;
 }
 
 .footer__menu {
@@ -363,13 +392,14 @@ p, a {
 .nav__list,
 .conditions__list {
     list-style: none;
-    
 }
 
 .nav__item,
 .conditions__items {
     margin-bottom: 1.2rem;
 }
+/* END MAIN */
+
 
 /* FOOTER */
 
@@ -381,25 +411,21 @@ p, a {
     width: 100%;
 }
 
-.social__container {
-    /* Kheight: 100%; */
-    /* height: 3rem; */
-}
-
 .social__list {
-    height: 100%;
-    /* background-color: brown; */
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
     list-style: none;
 }
 
 .social__item {
-    width: 30px;
     height: 30px;
     text-align: center;
+    width: 30px;
 }
+
+
 
 .social__item a {
     display: block;
@@ -407,23 +433,37 @@ p, a {
 
 .social__item i {
     font-size: 3rem;
+    transition: all 1s;
+}
+
+.social__item a:hover {
+    transform: scale(1.5);
 }
 
 .instagram {
-    height: 30px;
     background-color: white;
     border-radius: 40px;
+    height: 30px;
 }
 
 .instagram i {
+    color: var(--color-thirted);
     font-size: 15px;
     margin-top: 8px;
     padding-bottom: 7px;
-    color: var(--color-thirted);
+}
+
+.footer__logo img {
+    transition: all 1s;
+}
+
+.footer__logo:hover {
+    transform: scale(1.2);
+
 }
 
 .footer__copyright {
+    color: var(--color-font2);
     margin-top: 5rem;
     text-align: center;
-    color: var(--color-font2);
 }
